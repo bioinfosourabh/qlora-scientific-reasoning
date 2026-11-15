@@ -1,0 +1,18 @@
+{
+  "_comment": "Structure only. Replace the placeholder text with real examples; see data/README.md.",
+  "extraction": [
+    {"paper_context": "<paragraph from a paper you may reuse>",
+     "instruction": "What are the main limitations of this study?",
+     "response": "<target answer: grouped limitations, then what would strengthen the study>"}
+  ],
+  "qa": [
+    {"paper_context": "<paragraph>", "instruction": "<specific question>", "response": "<answer grounded in the paragraph>"}
+  ],
+  "reasoning": [
+    {"paper_context": "<paragraph>", "instruction": "Can we conclude causation from this result?", "response": "<reasoned answer>"}
+  ],
+  "structured": [
+    {"paper_context": "<paragraph>", "instruction": "Extract the structured reasoning for this text.",
+     "response": "{\"claims\": [\"<claim>\"], \"assumptions\": [\"<assumption>\"], \"limitations\": [\"<limitation>\"], \"confidence\": 0.5, \"evidence_spans\": [\"<phrase copied from the paragraph>\"]}"}
+  ]
+}

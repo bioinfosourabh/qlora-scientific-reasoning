@@ -1,0 +1,4 @@
+# CPU-only: data preparation, parsing, metrics and tests (used by CI)
+pydantic==2.10.4
+pyyaml>=6
+pytest>=7

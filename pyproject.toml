@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scientific-reasoning-assistant"
+version = "0.1.0"
+description = "QLoRA fine-tuning of TinyLlama-1.1B-Chat into an assistant for critical reading of scientific papers"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Sourabh Kumar", email = "bioinfosourabh@gmail.com"}]
+requires-python = ">=3.9"
+dependencies = ["pydantic>=2", "pyyaml>=6"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+pdf = ["PyMuPDF>=1.23"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
