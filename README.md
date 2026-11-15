@@ -100,9 +100,9 @@ print(a.chat("What are the main limitations of this study?"))
 print(a.chat("What experiments would strengthen these findings?"))
 ```
 
-**Training data.** The examples used in the original notebook are not part of this
-repository. Put them, or your own, in `data/examples.json` in the format described in
-`data/README.md` (`data/examples.template.json` shows the structure).
+**Training data.** `data/examples.json` contains the 18 examples from the original notebook
+(5 limitation-extraction, 6 critical Q&A, 7 experimental-reasoning). The passages are invented study
+summaries written for training. Add more in the format described in `data/README.md`.
 
 **What was run here.** No GPU or Hugging Face download was available while this
 repository was prepared, so TinyLlama has not been trained from this code yet. What was
