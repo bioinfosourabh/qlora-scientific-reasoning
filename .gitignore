@@ -11,4 +11,3 @@ outputs/
 *.pt
 adapter.zip
 # training data is supplied by the user
-data/examples.json

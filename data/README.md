@@ -1,8 +1,9 @@
 # Training data
 
-`examples.json` is not included in this repository. Create it from the example lists in
-the original notebook (`EXTRACTION_EXAMPLES`, `QA_EXAMPLES`, `REASONING_EXAMPLES`) or
-from your own material, in this format:
+`examples.json` holds the 18 training examples from the original notebook
+(`EXTRACTION_EXAMPLES`: 5, `QA_EXAMPLES`: 6, `REASONING_EXAMPLES`: 7). Each `paper_context` is an
+invented study summary written for training, not text from a real paper. The first runs showed
+that about 30 or more distinct examples are needed (see below), so add your own in this format:
 
 ```json
 {
